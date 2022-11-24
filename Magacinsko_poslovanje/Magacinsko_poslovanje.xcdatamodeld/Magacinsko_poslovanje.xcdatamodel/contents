@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Proizvod" representedClassName="Proizvod" syncable="YES">
+        <attribute name="nazivProizvoda" optional="YES" attributeType="String"/>
+        <attribute name="sifraProizvoda" optional="YES" attributeType="String"/>
+        <attribute name="ukupnoProizvoda" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="vrstaProizvoda" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="VrstaProizvoda" inverseName="proizvod" inverseEntity="VrstaProizvoda"/>
+    </entity>
+    <entity name="VrstaProizvoda" representedClassName="VrstaProizvoda" syncable="YES">
+        <attribute name="brojFakture" optional="YES" attributeType="String"/>
+        <attribute name="cena" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="datumFakture" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="kolkicinaUneto" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="proizvod" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Proizvod" inverseName="vrstaProizvoda" inverseEntity="Proizvod"/>
+    </entity>
+    <elements>
+        <element name="Proizvod" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="VrstaProizvoda" positionX="254.4249267578125" positionY="57.16351318359375" width="128" height="118"/>
+    </elements>
+</model>
