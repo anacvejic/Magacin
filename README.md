@@ -7,7 +7,7 @@ Small app for store-house work
 * [Illustrations](#illustrations)
 
 ## General info
-Store-house app was created as a research project with no practical purpose in mind. You can add, delete and edit new product and type of product. You can search product and type of product using autocomplete search textfield. The focus is on Core Data, entities, and relations between product and product type. Application is on serbian language.
+Store-house app was created as a research project with no practical purpose in mind. You can add, delete and edit new product and type of product. You can search product and type of product using autocomplete search textfield. The focus is on Core Data, entities, and relations between product and product type. Application is on Serbian language.
 
 ## Technologies
 * Swift programming language
